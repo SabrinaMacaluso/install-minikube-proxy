@@ -29,7 +29,7 @@ sudo systemctl restart docker.service
 sudo usermod -aG docker $USER && newgrp docker
 ```
 
-# Step 2: Install Minikube and kubectl
+# Step 2: Install Minikube
 ## Install Minikube
 ```
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
@@ -47,7 +47,7 @@ export no_proxy=$no_proxy,$(minikube ip)
 export NO_PROXY=$no_proxy,$(minikube ip)
 ```
 
-# Step 3 Install and kubectl
+# Step 3 Install kubectl
 ```
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
