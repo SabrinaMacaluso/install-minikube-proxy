@@ -42,9 +42,10 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 ```minikube start --docker-env http_proxy=$http_proxy --docker-env https_proxy=$https_proxy```
 
 
+```
 export no_proxy=$no_proxy,$(minikube ip)
 export no_proxy=$no_proxy,$(minikube ip)
-
+```
 
 # Step 3 Install and kubectl
 ```
