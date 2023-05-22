@@ -44,7 +44,7 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 ```
 export no_proxy=$no_proxy,$(minikube ip)
-export no_proxy=$no_proxy,$(minikube ip)
+export NO_PROXY=$no_proxy,$(minikube ip)
 ```
 
 # Step 3 Install and kubectl
