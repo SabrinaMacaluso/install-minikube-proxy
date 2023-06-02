@@ -59,7 +59,7 @@ then :
 source ~./bashrc
 ```
 
-# Step 3 Install kubectl
+# Step 3: Install kubectl
 ```bash
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
