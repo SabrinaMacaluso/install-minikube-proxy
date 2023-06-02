@@ -53,6 +53,7 @@ minikube start --docker-env http_proxy=$http_proxy --docker-env https_proxy=$htt
 export no_proxy=$no_proxy,$(minikube ip)
 export NO_PROXY=$no_proxy,$(minikube ip)
 ```
+then :
 
 ```bash
 source ~./bashrc
