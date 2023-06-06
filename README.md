@@ -81,13 +81,20 @@ echo "Minikube and kubectl installation completed successfully."
 
 If you encounter the error message "Failed to restart docker.service: Unit docker.service is masked."
 
-1- Try to switch to User account, run the following command to switch account and start minikube again: 
+1- Add User to Docker group and start minikube again: :
+
+```bash
+sudo usermod -aG docker $USER && newgrp docker
+minikube start --docker-env http_proxy=$http_proxy --docker-env https_proxy=$https_proxy
+```
+
+2- Try to switch to User account, run the following command to switch account and start minikube again: 
 
 ```bash
 sudo su - <your_username>
 minikube start --docker-env http_proxy=$http_proxy --docker-env https_proxy=$https_proxy
 ```
 
-2- Check Docker service file "/usr/lib/systemd/system/docker.service" and verify if the proxy is still present.
+3- Check Docker service file "/usr/lib/systemd/system/docker.service" and verify if the proxy is still present.
 
 
