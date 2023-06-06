@@ -81,7 +81,7 @@ echo "Minikube and kubectl installation completed successfully."
 
 If you encounter the error message "Failed to restart docker.service: Unit docker.service is masked."
 
-1- Add User to Docker group and start minikube again: :
+1- Add User to Docker group and start minikube again:
 
 ```bash
 sudo usermod -aG docker $USER && newgrp docker
